@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  display: flex;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #ebf4ff;
+position: relative;
 }
+.header{
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.other-ele{
+  padding-top: 100px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+}
+.container {
+  margin: 10px 10px;
+  background-color: #667eea3e;
+  border-radius: 16px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 2px 1px 14px 6px #c3ccf3;
+}
+ul {
+  list-style: none;
+}
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+.logo {
+  padding-left: 30px;
+  font-size: large;
+  font-weight: 600;
+}
+.add-page {
+  display: flex;
+  justify-content: center;
+}
+.add-cont{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.nomovie{
+  display: flex;
+  justify-content: center;
+}
+.welcom{
+display: flex;
+justify-content: center;
+flex-direction: column;
+margin-left:200px ;
+
+}
+.Add{
+  background-color: #667eea6f;
+  padding: 8px;
+  margin: 5px 5px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.welcom h6{
+  color:grey;
+}
+.add-cont input {
+
+  opacity: 0.7;
+  color: black;
+  width: 200px;
+  outline: none;
+  border: none;
+  padding: 8px;
+  border-radius: 15px;
+  background-color: #c3dafe;
+  margin: 20px;
+}
+.logo a,
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+.header{
+  transition: 1s;
+}
+.header:hover,.btns button:hover{
+  opacity: 0.99;
+  transform: scale(1.01,1.01);
+}
+.movies-result{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.ele {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+.ele img{
+  width: 110px;
+}
+.desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.btns button {
+  background-color: #667eea;
+margin-right: 10px;
+padding: 10px;
+border-radius: 15px;
+outline: none;
+border: none;
+}
+.desc p{
+  color: red;
+}
+.watchlistrender,.watchedrender{
+  display: flex;
+  gap: 20px;
+  flex-wrap:wrap ;
+  justify-content: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+.watch-list,.watched{
+  margin: auto 20px;
+  display: flex;
+  justify-content: space-between;
 }
+.watch-list span,.watched span {
+  background-color: #667eea;
+  border-radius: 10px;
+  padding: 5px 5px;
+}
+.watch-list-page,.watched-page{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+li{
+  list-style: none;
+}
+.watchimg img{
+width: 150px;
+border-radius: 10px;
+padding: 20px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.overlay-btn{
+  position: absolute;
+  bottom: 0;
+  left: 75px;
+}
+.movie-list li {
+  position: relative;
+}
+.ctrl-btn{
+  border: none;
+  outline: none;
+  opacity: 0.6;
+  color: black;
 }
